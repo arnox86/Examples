@@ -15,7 +15,7 @@ using namespace std;
 
 int fib (int a) {       // Recursive method for calculating a-th fibonacci number
 
-    #ifdef DEBUG_MSG_ON
+    #ifdef DEBUG_MSG_ON     // If debug msg is on: gives out current a value
         cout << "a: " << a << endl;
     #endif
 
