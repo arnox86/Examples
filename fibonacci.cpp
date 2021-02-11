@@ -14,11 +14,13 @@ using namespace std;
 
 
 int fib (int a) {       // Recursive method for calculating a-th fibonacci number
-
+    
+    
     #ifdef DEBUG_MSG_ON     // If debug msg is on: gives out current a value
         cout << "a: " << a << endl;
     #endif
 
+    
     if (a < 0) {
         cout << "Error: no negative numbers accepted!  ::prog_exit" << endl;
         exit (0);
@@ -36,6 +38,8 @@ int fib (int a) {       // Recursive method for calculating a-th fibonacci numbe
         return fib (a-1) + fib (a-2);
     }
 }
+
+
 
 int main () {
     int _inputNumber;   // Variable for input
