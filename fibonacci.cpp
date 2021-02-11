@@ -19,7 +19,12 @@ int fib (int a) {       // Recursive method for calculating a-th fibonacci numbe
         cout << "a: " << a << endl;
     #endif
 
-    if (a == 0) {       // Checking if input is 0
+    if (a < 0) {
+        cout << "Error: no negative numbers accepted!  ::prog_exit" << endl;
+        exit (0);
+    }
+
+    else if (a == 0) {       // Checking if input is 0
         return 0;
     }
 
